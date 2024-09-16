@@ -1,0 +1,70 @@
+/* Estilos generales */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: block;
+    border-bottom: solid 2px transparent;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: #575757;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar li .active {
+    border-bottom: solid 2px #04AA6D;
+    transition: border-bottom 0.3s ease-in, color 0.3s ease-in;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 8px 5px;
+    }
+
+    .navbar ul {
+        flex-direction: row ;
+        align-items: center;
+justify-content: space-between;    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+
+    .navbar li a {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
